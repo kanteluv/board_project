@@ -9,6 +9,8 @@ import java.util.List;
 
 @Repository
 public interface TBboardRepository extends JpaRepository<TBboardEntity, Integer> {
-    public List<TBboardEntity> findTop3BytbBoardCruserDateAfterOrderBytbBoardCruserCntlikeDesc(Date tbBoardCruserDate);
-    public List<TBboardEntity> findByOrderBytbBoardCruserDateDesc();
+    public List<TBboardEntity> findTop3ByTbBoardCruserDateAfterOrderByTbBoardCruserCntlikeDesc(Date tbBoardCruserDate);
+    public List<TBboardEntity> findByOrderByTbBoardCruserDateDesc();
+
+    public List<TBboardEntity> findByTbBoardTitleContains(String tbBoardTitle);
 }

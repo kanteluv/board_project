@@ -16,6 +16,6 @@ import lombok.NoArgsConstructor;
 @Table(name = "TB_POPULARSEARCH")
 public class TBpopularsearchEntity {
     @Id
-    private String popularsearchTerm;
-    private int popularsearchCount;
+    private String tbPopularsearchTerm;
+    private int tbPopularsearchCount;
 }
